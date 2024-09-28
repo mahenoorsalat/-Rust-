@@ -66,6 +66,7 @@ themeToggleButton.addEventListener('click', function () {
 
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
+        icon.style.color = "white"
     } 
     
     
@@ -115,6 +116,7 @@ themeToggleButton.addEventListener('click', function () {
 
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
+        icon.style.color = "#147818"
     }
 });
 

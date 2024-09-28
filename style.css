@@ -33,9 +33,11 @@ nav {
     transition: background 0.3s;
     position: fixed;
 }
-
+.theme-toggle i {
+    font-size: 2rem; /* Adjust size as needed */
+  }
 .logo img {
-    height: 74px;
+    height: 120px;
     border-radius: 16px;
 }
 
@@ -53,8 +55,13 @@ nav:hover {
     display: flex;
     justify-content: space-between;
 }
-
+#theme-toggle{
+    color: #147818;
+    background: transparent;
+    border: none;
+}
 .navbar ul li {
+    font-size: 20px;
     list-style: none;
     color: #4caf50;
     padding: 10px 20px;
@@ -169,7 +176,7 @@ nav:hover {
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 23px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -196,7 +203,7 @@ nav:hover {
     transform: translate(-50%, -50%);
     z-index: 1;
     color: #e0e0e0;
-    font-size: 39px;
+    font-size: 44px;
     text-align: center;
 }
 
@@ -228,8 +235,8 @@ nav:hover {
 
 #about img {
     position: relative;
-    height: 600px;
-    margin-right: 45px;
+    height: 688px;
+    margin-right: 153px;
     border-radius: 16px;
 }
 
@@ -243,18 +250,20 @@ nav:hover {
 }
 
 #about p {
-    font-size: 21px;
+    line-height: 1.5;
+    font-size: 25px;
     margin-bottom: 21px;
 }
 
 .info button {
+    margin-top: 34px;
     cursor: pointer;
     color: #121212;
     background: #4caf50;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 23px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -288,10 +297,9 @@ nav:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
+    width: 244px;
     transition: transform 0.5s, box-shadow 0.3s;
 }
-
 .service-box:hover {
     transform: translateY(0px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -304,7 +312,7 @@ nav:hover {
 }
 
 .service-box h1 {
-    font-size: 17px;
+    font-size: 22px;
 }
 
 /* --roadmap--opensource */
@@ -316,7 +324,7 @@ nav:hover {
 #roadmap h1 {
     margin-top: 56px;
     text-align: center;
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 30px;
     color: #4caf50;
 }
@@ -335,13 +343,13 @@ nav:hover {
 }
 
 .roadmap-item h2 {
-    font-size: 24px;
+    font-size: 29px;
     margin-bottom: 10px;
     color: #4caf50;
 }
 
 .roadmap-item p {
-    font-size: 16px;
+    font-size: 21px;
     line-height: 1.5;
 }
 
@@ -378,12 +386,14 @@ nav:hover {
 }
 
 .details-container p {
-    font-size: 18px;
-    margin: 48px 62px;
+    font-size: 22px;
+    margin: 42px 62px;
 }
-
+.details-container p i{
+    margin: 14px 0px;
+}
 .map-container {
-    width: 55%;
+    width: 36%;
 }
 
 .map-container h2 {
@@ -431,7 +441,7 @@ nav:hover {
 .social-icons img:nth-child(1),
 .social-icons img:nth-child(2),
 .social-icons img:nth-child(3) {
-    width: 100px;
+    width: 146px;
     height: 25px;
     transition: transform 0.3s ease;
 }
@@ -478,7 +488,7 @@ nav:hover {
 }
 
 .project h2 {
-    font-size: 20px;
+    font-size: 31px;
     margin-bottom: 10px;
     color: #4caf50;
 }
@@ -516,7 +526,7 @@ nav:hover {
     z-index: 1075;
     position: fixed;
     bottom: 31px;
-    right: 20px;
+    right: 48px;
     background-color: #4caf50;
     color: white;
     border-radius: 50%;
@@ -588,7 +598,7 @@ footer {
 
 /* --status--section */
 #Status h1 {
-    font-size: 31px;
+    font-size: 34px;
     margin-bottom: 45px;
     color: #388e3c;
 }
@@ -605,9 +615,68 @@ footer {
     text-decoration: none;
 }
 
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
 /* --media-queries */
 @media (max-width: 768px) {
 
+    nav {
+        padding: 1px 20px;
+    }
+
+    .info button {
+        margin-top: 34px;
+        cursor: pointer;
+        color: #121212;
+        background: #4caf50;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        color: #4caf50;
+        background: #1f1f1f;
+        padding: 1px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background 0.3s;
+        position: fixed;
+    }
+    .logo img {
+        height: 90px;
+        border-radius: 16px;
+    }
+    #about p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin-bottom: 21px;
+    }
     .details-container p {
         font-size: 12px;
         color: white;
@@ -658,10 +727,7 @@ footer {
         display: block;
     }
 
-    iframe {
-        width: 300px;
-        height: 300px;
-    }
+
 
     form {
         margin-top: 56px;
@@ -742,6 +808,7 @@ footer {
     }
 
     #about img {
+        margin-right: 0px;
         height: 400px;
     }
 
@@ -750,7 +817,7 @@ footer {
     }
 
     #about h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #Status h1 {
