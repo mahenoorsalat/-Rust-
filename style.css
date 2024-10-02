@@ -340,7 +340,13 @@ nav:hover {
     color: #4caf50;
     margin-bottom: 10px;
 }
-
+h2{
+    margin-top: 32px;
+}
+.h2{
+    margin: 12px 0px;
+    font-size: 22px;
+}
 .service-box h1 {
     font-size: 22px;
 }
